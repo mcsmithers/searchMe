@@ -1,6 +1,6 @@
 # search-me
 
-> A Vue.Js project that performs searches for adoptable pets
+> A Vue.js project
 
 ## Build Setup
 
