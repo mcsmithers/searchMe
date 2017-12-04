@@ -4,21 +4,28 @@
 import Vue from 'vue'
 //import the App component
 import App from './App'
+//import VueResource for API 
+import VueResource from 'vue-resource'
 //import the vue router
 import VueRouter from 'vue-router'
-//tell vue to use the router
+//tell vue to use the router and resource
+Vue.use(VueResource)
 Vue.use(VueRouter)
 /* eslint-disable no-new */
-//import the hello component
-import HelloWorld from './components/Hi'
+//import the hi component
+import Hi from './components/Hi'
 //import the about component
 import About from './components/About'
+//import the search component
+import Search from './components/Search'
 //define your routes
 const routes = [
 	//route for the home route of the webpage
-	{ path: '/', component: HelloWorld },
+	{ path: '/', component: Hi },
 	//route for the about route of the webpage
-	{ path: '/about', component: About }
+  { path: '/about', component: About },
+  //route for the search component
+  { path: '/', component: Search}
 ]
 
 // Create the router instance and pass the `routes` option
@@ -28,7 +35,7 @@ const router = new VueRouter({
   routes, // short for routes: routes
   mode: 'history'
 })
-//instatinat the vue instance
+//instatinating the vue instance
 new Vue({
 	//define the selector for the root component
   el: '#app',

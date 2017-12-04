@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-  This app was made by Christina Smithers for a simple search.  
+  This app was made by Christina Smithers for a simple search.  She likes space stuff a lot and once sent her parents birthday cards through the NASA Curiosity Rover.
   </div>
 </template>
 
