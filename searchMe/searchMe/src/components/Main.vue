@@ -1,7 +1,12 @@
 <template>
-  <div class="hello">
+  <div class="header">
+<img src="src\assets\Namibie_Hoba_Meteorite.JPG" width="300" height="300">        
     <h1>{{ msg }}</h1>
-    <h2>About this App</h2>
+  <div id="search-area">
+    <form id="search">
+      Search <input name="query">
+    </form>
+  </div>
     <p>This app searches for meteorite landing sites.  You can look at a landing by year, mass, geolocation and other traits of famous landings.</p>
   </div>
 </template>
@@ -11,7 +16,7 @@ export default {
   name: 'SearchMe',
   data () {
     return {
-      msg: 'Welcome to SearchMe, a VueJS mini-app to fins some cool meteorite landings'
+      msg: 'Meteorite Landings'
     }
   }
 }
