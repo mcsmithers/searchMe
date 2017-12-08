@@ -1,8 +1,15 @@
-# vue
+# searchMe
 
-> A Vue.js project
+> A Vue.js project by Christina Smithers
 
-## Build Setup
+## Summary
+This is a VueJS project to do a filtered search of [meteorite fall data](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) from NASA.  It also has a map for a good user experience using the [npm Google maps library](https://www.npmjs.com/package/vue2-google-maps).
+
+The color palette is taken from material design palettes in [blue-grey](https://www.materialpalette.com/grey/blue-grey).
+
+
+## To Run
+### Build Setup
 
 ``` bash
 # install dependencies
