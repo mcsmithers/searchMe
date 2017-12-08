@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <h1>SearchMe</h1>
+    <p>Find a meteorite by typing in the searchbox.</p>
   <gmap-map
     :center="center"
     :zoom="1"
@@ -15,8 +17,9 @@
       @click="center=m.position"
     ></gmap-marker>
   </gmap-map>
+  <br/>
 
-  <input v-model="search" placeholder="filter meteorites">
+  <input v-model="search" placeholder="Search a meteorite...">
   <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.position }}, Mass:{{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
   </div>
 </template>
