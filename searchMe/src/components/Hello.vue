@@ -1,7 +1,5 @@
 <template>
   <div class="hello">
-  <h1>SearchMe</h1>
-  <p>Find a meteorite impact by typing in the searchbox below.  The map will narrow down until it gets the meteorite you want.</p>
   <gmap-map
     :center="center"
     :zoom="1"
@@ -18,8 +16,7 @@
     ></gmap-marker>
   </gmap-map>
 
-<br/>
-  <input v-model="search" placeholder="Meteorite name...">
+  <input v-model="search" placeholder="filter meteorites">
   <p v-for="meteorite in filteredList">{{ meteorite.name }} - {{ meteorite.position }}</p>
   </div>
 </template>
@@ -33,13 +30,13 @@
       this.mass = mass;
       this.latitude = latitude;
       this.longitude = longitude;
-      this.position = { 'latitude': latitude, 'longitude': longitude }
+      this.position = { 'lat': latitude, 'lng': longitude }
     }
   }
   export default {
 		data() {
       return {
-        center: {lat: 10.0, lng: 10.0},
+        center: {lat: 10.0, lon: 10.0},
           search: '',
 		      meteoriteList: [
         new Meteorite(
@@ -123,7 +120,5 @@ li {
 a {
   color: #455A64;
 }
-input {
-  
-}
+
 </style>
