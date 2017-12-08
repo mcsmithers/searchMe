@@ -2,6 +2,8 @@
 
 > A Vue.js project by Christina Smithers
 
+![meteorite](https://upload.wikimedia.org/wikipedia/commons/6/60/Meteoritenfund_auf_W%C3%BCstenpflaster.jpg "Meteorite")
+
 ## Summary
 This is a VueJS project to do a filtered search of [meteorite fall data](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) from NASA.  It also has a map for a good user experience using the [npm Google maps library](https://www.npmjs.com/package/vue2-google-maps).
 
