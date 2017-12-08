@@ -20,7 +20,7 @@
   <br/>
 
   <input v-model="search" placeholder="Search a meteorite">
-  <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.reclat }} latitude {{ meteorite.reclong }} longitude, Mass: {{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
+  <p v-for="meteorite in filteredList">Name: {{ meteorite.name }}, Location: {{ meteorite.reclat }} latitude {{ meteorite.reclong }} longitude, Mass: {{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
   </div>
 </template>
 
@@ -29,7 +29,7 @@
   export default {
 		data() {
       return {
-        center: {reclat: 10.0, reclong: 10.0},
+        center: {lat: 10.0, lng: 10.0},
           search: '',
 		      meteoriteList: []
       }
