@@ -17,7 +17,7 @@
   </gmap-map>
 
   <input v-model="search" placeholder="filter meteorites">
-  <p v-for="meteorite in filteredList">{{ meteorite.name }} | Location: {{ meteorite.position }} Mass:{{meteorite.mass}} grams Reorded: {{meteorite.year}}</p>
+  <p v-for="meteorite in filteredList">{{ meteorite.name }} Location: {{ meteorite.position }} Mass:{{meteorite.mass}} grams Reorded: {{meteorite.year}}</p>
   </div>
 </template>
 
