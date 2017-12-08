@@ -1,26 +1,8 @@
 <template>
   <div class="hello">
-    <h1>SearchMe</h1>
-    <p>Find a meteorite by typing in the searchbox.</p>
-  <gmap-map
-    :center="center"
-    :zoom="1"
-    style="width: 100%; height: 300px"
-  >
-    <gmap-marker
-      :key="index"
-      v-for="(m, index) in filteredList"
-      :position="m.position"
-      :clickable="true"
-      :draggable="true"
-      :label="m.name"
-      @click="center=m.position"
-    ></gmap-marker>
-  </gmap-map>
-  <br/>
-
-  <input v-model="search" placeholder="Search a meteorite">
-  <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.position }}, Mass:{{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
+  <p>{{ meteoriteList.length }}</p>
+  <input v-model="search" placeholder="filter meteorites">
+  <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.Geolocation }}, Mass:{{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
   </div>
 </template>
 
@@ -69,7 +51,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #455A64;
+  color: #42b983;
 }
-
 </style>
