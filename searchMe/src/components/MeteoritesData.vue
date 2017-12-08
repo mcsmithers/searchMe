@@ -2,7 +2,7 @@
   <div class="hello">
   <p>{{ meteoriteList.length }}</p>
   <input v-model="search" placeholder="filter meteorites">
-  <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.Geolocation }}, Mass:{{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
+  <p v-for="meteorite in filteredList">{{ meteorite.name }}, Location: {{ meteorite.reclat }} {{meteorite.reclong}}, Mass:{{ meteorite.mass }} grams, Recorded: {{ meteorite.year }}</p>
   </div>
 </template>
 
