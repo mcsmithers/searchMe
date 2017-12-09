@@ -30,8 +30,13 @@
 		data() {
       return {
         center: {lat: 10.0, lng: 10.0},
+        markers: [{
+          position: {lat: 10.0, lng: 10.0}
+        }, {
+          position: {lat: 11.0, lng: 11.0}
+        }],
           search: '',
-		      meteoriteList: []
+          meteoriteList: []
       }
 		},
     computed: {
