@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img width=200 src="./assets/Namibie_Hoba_Meteorite.jpg" id="meteor-pic">
+    <img id="meteor-pic">
     <router-view></router-view>
   </div>
 </template>
@@ -20,7 +20,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     margin-top: 60px;
-	background-color: #CFD8DC;
+	/* background-color: #CFD8DC; */
 	color: #212121;
   }
 
@@ -28,7 +28,7 @@
     border-radius: 50%;
   }
   html{
-	  background-color: #607D8B;
+	  /* background-color: #607D8B; */
   }
 
 </style>

@@ -20,8 +20,20 @@
   <br/>
 
 <h2>Sites</h2>
-  <input v-model="search" placeholder="Search a meteorite">
-  <p v-for="meteorite in filteredList">Name: {{ meteorite.name }}, Location: {{ meteorite.reclat }} latitude {{ meteorite.reclong }} longitude, Mass: {{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
+<input v-model="search" placeholder="Search a meteorite...">
+<table style="width:100%">
+    <th>Name</th>
+    <th>Location</th> 
+    <th>Mass (g)</th>
+    <th>Recorded</th>
+    <tr v-for="meteorite in filteredList">
+      <td> {{ meteorite.name }}</td>
+      <td> {{ meteorite.reclat }} latitude {{ meteorite.reclong }} longitude</td>
+      <td>{{meteorite.mass}}</td>
+      <td>{{meteorite.year}}</td>
+  </tr>
+</table>
+ 
   </div>
 </template>
 
