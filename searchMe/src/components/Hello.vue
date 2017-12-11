@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>SearchMe</h1>
     <p>Find a meteorite by typing in the searchbox.</p>
-  <gmap-map
+  <!-- <gmap-map
     :center="center"
     :zoom="1"
     style="width: 100%; height: 300px"
@@ -16,9 +16,10 @@
       :label="m.name"
       @click="center=m.position"
     ></gmap-marker>
-  </gmap-map>
+  </gmap-map> -->
   <br/>
 
+<h2>Sites</h2>
   <input v-model="search" placeholder="Search a meteorite">
   <p v-for="meteorite in filteredList">Name: {{ meteorite.name }}, Location: {{ meteorite.reclat }} latitude {{ meteorite.reclong }} longitude, Mass: {{meteorite.mass}} grams, Recorded: {{meteorite.year}}</p>
   </div>
@@ -30,11 +31,6 @@
 		data() {
       return {
         center: {lat: 10.0, lng: 10.0},
-        markers: [{
-          position: {lat: 10.0, lng: 10.0}
-        }, {
-          position: {lat: 11.0, lng: 11.0}
-        }],
           search: '',
           meteoriteList: []
       }
