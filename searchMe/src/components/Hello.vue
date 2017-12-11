@@ -2,12 +2,12 @@
   <div class="hello">
     <h1>SearchMe</h1>
     <p>Find a meteorite by typing in the searchbox.</p>
-  <!-- <gmap-map
+  <gmap-map
     :center="center"
     :zoom="1"
     style="width: 100%; height: 300px"
   >
-    <gmap-marker
+    <!-- <gmap-marker
       :key="index"
       v-for="(m, index) in filteredList"
       :position="m.position"
@@ -15,8 +15,8 @@
       :draggable="true"
       :label="m.name"
       @click="center=m.position"
-    ></gmap-marker>
-  </gmap-map> -->
+    ></gmap-marker> -->
+  </gmap-map>
   <br/>
 
 <h2>Sites</h2>
