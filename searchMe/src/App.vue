@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img id="meteor-pic">
     <router-view></router-view>
   </div>
 </template>
