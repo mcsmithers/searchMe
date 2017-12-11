@@ -7,7 +7,7 @@
     :zoom="1"
     style="width: 100%; height: 300px"
   >
-    <!-- <gmap-marker
+    <gmap-marker
       :key="index"
       v-for="(m, index) in filteredList"
       :position="m.position"
@@ -15,7 +15,7 @@
       :draggable="true"
       :label="m.name"
       @click="center=m.position"
-    ></gmap-marker> -->
+    ></gmap-marker>
   </gmap-map>
   <br/>
 
@@ -38,8 +38,10 @@
     computed: {
       filteredList() {
         return this.meteoriteList.filter(meteorite => {
-          return meteorite.name.toLowerCase().includes(this.search.toLowerCase())
-        })
+             return meteorite.name.toLowerCase().includes(this.search.toLowerCase())
+          }).map(m=>{
+             return Object.assign({},m,{position:{lat:+m.reclat, lng:+m.reclong}})
+          });
       }
     },
     created() {
