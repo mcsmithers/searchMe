@@ -19,15 +19,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     margin-top: 60px;
-	/* background-color: #CFD8DC; */
 	color: #212121;
-  }
-
-  #meteor-pic {
-    border-radius: 50%;
-  }
-  html{
-	  /* background-color: #607D8B; */
   }
 
 </style>

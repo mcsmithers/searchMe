@@ -7,24 +7,20 @@
 ## Summary
 This is a VueJS project to do a filtered search of [meteorite fall data](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh) from NASA.  It also has a map for a good user experience using the [npm Google maps library](https://www.npmjs.com/package/vue2-google-maps).
 
-The color palette is taken from material design palettes in [blue-grey](https://www.materialpalette.com/grey/blue-grey).
+The project uses testing from webpack which utilizes karma and selenium in addition to phantomJS.
 
-
+It is also hosted on ![Heroku](https://searchmeteorites.herokuapp.com/).
 ## To Run
-### Build Setup
-
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
+## Testing
+Change into the `searchMe` directory to run tests.
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# serve with hot reload at localhost:5000 powered with express.js
+node server.js
 
 # run unit tests
 npm run unit
