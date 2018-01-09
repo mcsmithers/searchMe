@@ -9,7 +9,6 @@ This is a VueJS project to do a filtered search of [meteorite fall data](https:/
 
 The project uses testing from webpack which utilizes karma and selenium in addition to phantomJS.
 
-It is also hosted on ![Heroku](https://searchmeteorites.herokuapp.com/).
 ## To Run
 ``` bash
 # install dependencies
