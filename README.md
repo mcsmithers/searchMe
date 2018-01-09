@@ -22,7 +22,7 @@ Change into the `searchMe` directory to run tests.
 # serve with hot reload at localhost:5000 powered with express.js
 node server.js
 
-# run unit tests
+# run unit tests -  please note that at this time, PhantomJS which is used in the testing tools, is not able to use Promises.  An alternative is being researched.
 npm run unit
 
 # run e2e tests
